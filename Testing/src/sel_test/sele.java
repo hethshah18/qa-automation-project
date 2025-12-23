@@ -18,7 +18,7 @@ public class sele {
 		driver.findElement(By.id("email")).sendKeys("admin@aits.com");
 		driver.findElement(By.id("password")).sendKeys("admiN@123$");
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/form/button")).click();
-		Thread.sleep(10000);
+//		 Thread.sleep(10000);
 		driver.quit();
 	}
 
