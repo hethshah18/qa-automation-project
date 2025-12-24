@@ -26,8 +26,11 @@ public class sele {
 		driver.findElement(By.id("pass")).sendKeys("Het@1234");
 		driver.findElement(By.xpath("(//*[contains(text(),'Log in')])[1]")).click();
 		Thread.sleep(5000);
-		driver.quit();
+		// driver.quit();
 
+		// driver.get("https://www.instagram.com/");
+		// driver.findElement(By.css("//*[@id=\"loginForm\"]/div[1]/div[1]/div")).sendKeys("hetuu_1811");
+	//	driver.findElement(By.name("")).sendKeys("hetshah1825");
 	}
 
 }
