@@ -1,0 +1,18 @@
+ID
+Xpath
+    //tagename[@attribute='value'] -> //input[@placeholder='Username']
+Css Selector
+    Class name -> tagename.classname -> button.signInBtn
+                                     -> p.error
+    id -> tagename#id -> input#inputUsername
+    tagename[attribute='value'] -> input[placeholder='Username']
+
+Name
+Class Name
+Tag Name
+Link Text
+    Give text -> Forgot your password?
+Partial Link Text
+
+Chrome -> Console -> $('p.error')
+

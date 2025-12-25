@@ -22,9 +22,11 @@ public class sele {
 		// driver.quit();
 
 		driver.get("https://www.facebook.com/");
-		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("hethshah2000@gmail.com");
+		driver.findElement(By.id("email")).sendKeys("hethshah2000@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("Het@1234");
 		driver.findElement(By.xpath("(//*[contains(text(),'Log in')])[1]")).click();
+		System.out.println("Current URL: " + driver.getCurrentUrl());
+
 		Thread.sleep(5000);
 		// driver.quit();
 
