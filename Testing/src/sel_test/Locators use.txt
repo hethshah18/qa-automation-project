@@ -1,17 +1,30 @@
 ID
 Xpath
     //tagename[@attribute='value'] -> //input[@placeholder='Username']
-Css Selector
+    <input type="text" placeholder="Name"> -> //input[@placeholder='Name']
+
+    //tagename[@attribute='value][index]
+    //parenttagnamer/childtagename
+    //button[contains(@class,'submit)] -> regular expression
+    If go to one form in that 2 buttons then go with the intdex with child and parenttagnamer
+        //div[@class='forgot-pwd-btn-conainer']/button[1]
+    //tagename
+
+    Css Selector
     Class name -> tagename.classname -> button.signInBtn
                                      -> p.error
     id -> tagename#id -> input#inputUsername
     tagename[attribute='value'] -> input[placeholder='Username']
+    Parentagename childtagename
+    input[type*='pass']
+    tagename
 
 Name
 Class Name
 Tag Name
 Link Text
     Give text -> Forgot your password?
+    
 Partial Link Text
 
 Chrome -> Console -> $('p.error')
