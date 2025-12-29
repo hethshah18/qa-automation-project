@@ -31,6 +31,17 @@ public class U_R_S_A_testing {
 //        driver.quit();
 
  
+        driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
+        System.out.println(driver.findElement(By.cssSelector("p.infoMsg")).getText());
+        driver.findElement(By.cssSelector("button.go-to-login-btn")).click();//  (//div[@class='forgot-pwd-btn-conainer']/button[1])
+        Thread.sleep(1000);
+        driver.findElement(By.id("inputUsername")).sendKeys("het");
+        driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy");
+        // driver.findElement(By.id("chkboxOne")).click();
+        // driver.findElement(By.id("chkboxTwo")).click();
+        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+        Thread.sleep(5000);
+        driver.quit();
 
     }
 }
