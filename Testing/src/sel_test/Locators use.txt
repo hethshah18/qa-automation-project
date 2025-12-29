@@ -10,7 +10,21 @@ Xpath
         //div[@class='forgot-pwd-btn-conainer']/button[1]
     //tagename
 
-    Css Selector
+    from root to child -> it is called absulte xpath -> use '/' single /.
+    /html/body/header
+
+Dirctly called the tag -> called relative xpath -> use '//' double //.
+    ->//header
+
+sibling for next button
+    parent to child
+        //header/div/button[1]/following-sibling::button[2]
+    child to parent
+        //header/div/button[1]/parent::div
+        //header/div/button[1]/parent::div/parent::header
+        //header/div/button[1]/parent::div/parent::header/a
+
+Css Selector
     Class name -> tagename.classname -> button.signInBtn
                                      -> p.error
     id -> tagename#id -> input#inputUsername
@@ -28,4 +42,7 @@ Link Text
 Partial Link Text
 
 Chrome -> Console -> $('p.error')
+
+
+
 
