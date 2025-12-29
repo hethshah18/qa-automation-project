@@ -22,13 +22,15 @@ public class U_R_S_A_testing {
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Het");
         driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("hethshah2000@gmail.com");
         driver.findElement(By.xpath("//input[@placeholder='Phone Number']")).sendKeys("1212124578");
-        driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
-        System.out.println(driver.findElement(By.cssSelector("p.infoMsg")).getText());
-        driver.findElement(By.cssSelector("button.go-to-login-btn")).click();
-        driver.findElement(By.id("inputUsername")).sendKeys("het");
-        driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy");
-        driver.findElement(By.className("signInBtn")).click();
-//        driver.quit();s
+        // driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
+        // System.out.println(driver.findElement(By.cssSelector("p.infoMsg")).getText());
+        // driver.findElement(By.cssSelector("button.go-to-login-btn")).click();
+        // driver.findElement(By.id("inputUsername")).sendKeys("het");
+        // driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy");
+        // driver.findElement(By.className("signInBtn")).click();
+//        driver.quit();
+
+ 
 
     }
 }
