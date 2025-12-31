@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Autosuggestiv {
     public static void main(String[] args) throws InterruptedException {
@@ -27,12 +28,6 @@ public class Autosuggestiv {
                 break;
             }
         }
-
-        System.out.println(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
-        driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).click();
-        Thread.sleep(2000);
-        System.out.println(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
-        System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 
     }
 
