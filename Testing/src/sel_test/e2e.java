@@ -22,7 +22,7 @@ public class e2e {
 
          if (driver.findElement(By.id("Div1")).getDomAttribute("style").contains("1"));
         {
-            System.out.println("it's enabled");
+            System.out.println("it's disabled");
             Assert.assertTrue(true);
         }
 
