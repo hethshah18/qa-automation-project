@@ -1,4 +1,4 @@
-package sel_test;
+package sel_test.Dropdown;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

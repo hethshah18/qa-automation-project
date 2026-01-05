@@ -1,0 +1,16 @@
+Implicit Wait : 
+                Hey wait for n(3) number of seconds before you throw exception
+                you can apply for golabelly
+                it is wait for 3 sec for load and if its is load in 2 sec then not wait for remaning sec and move on next step
+                for each and every steps/funcationality
+
+Explicit Wait :  
+                Target specific element 
+                if want to wait for 15 seconds to load data
+
+Thread.Sleep : 
+                its part of java and hold test for 3/5 seconds
+
+.Fluent Wait : 
+
+ 
