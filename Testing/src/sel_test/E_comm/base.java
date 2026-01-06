@@ -8,29 +8,33 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class base {
     public static void main(String[] args) throws InterruptedException {
         
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        //implicitlyWait - global wait
+        //driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
         //Thread.sleep(3000);
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Carrot"};
-
+        //explicit wait can be used here for specific element in - stead of global wait
+        WebDriverWait w = new WebDriverWait(driver,java.time.Duration.ofSeconds(5));
         addItems(driver,itemsNeeded);
 
         driver.findElement(By.cssSelector("img[alt='Cart']")).click();
         driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
+        w.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("input.promoCode")));
 
-        driver.findElement(By.cssSelector("button.promoBtn")).click();
         driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
         driver.findElement(By.cssSelector("button.promoBtn")).click();
-        Thread.sleep(10000);
-        //explicit wait can be used here
-        
+
+        w.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("span.promoInfo")));
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
         driver.findElement(By.xpath("//button[text()='Place Order']")).click();
 
@@ -69,3 +73,4 @@ public class base {
     }
 
 }
+  

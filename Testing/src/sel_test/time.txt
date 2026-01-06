@@ -12,5 +12,5 @@ Thread.Sleep :
                 its part of java and hold test for 3/5 seconds
 
 .Fluent Wait : 
-
- 
+                check every 2sec/3sec/5sec which time you given
+                check regular intervals of time until the time out object gets found
