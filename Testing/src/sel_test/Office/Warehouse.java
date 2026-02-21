@@ -11,6 +11,7 @@ public class Warehouse {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://weshareapp.photos/auth/login");
+        driver.get("https://dashboard.weshareapp.photos/auth/login");
         // driver.findElement(By.xpath("//button[.='Sign Up']")).click();
         // driver.findElement(By.id("username")).sendKeys("King");
         // driver.findElement(By.id("email")).sendKeys("hethshah2000+1@gmail.com");
